@@ -54,6 +54,44 @@ body {
   margin: 0;
 }
 
+body.oscuro {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+
+#form-tarea {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+#lista {
+  width: min(700px, 90%);
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+#lista li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+#lista li span {
+  flex: 1;
+}
+
+#lista li.completada span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
 h1,
 h2 {
   font-family: var(--heading);
